@@ -1,3 +1,14 @@
+/* Fix bug iframe 16:9 youtube */
+.recipe-video {
+	/* togliamo 50vw altrimenti l'ALTEZZA del contenitore cambia insieme alla LARGHEZZA della viewport */
+	height: auto;
+}
+
+.recipe-video iframe {
+	/* questo contenitore ha sempre la stessa forma, indipendentemente dalle dimensioni */
+	aspect-ratio: 16/9;
+}
+
 /******* SOPRA I 576px (BONUS) *********/
 @media screen and (min-width: 576px) {
 
