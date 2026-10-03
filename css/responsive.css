@@ -1,0 +1,101 @@
+/******* SOPRA I 576px (BONUS) *********/
+@media screen and (min-width: 576px) {
+
+	/* L'immagine va in float */
+	.presentation img {
+		float: left;
+		margin: 10px;
+		margin-left: 0;
+	}
+
+	/* I bottoni social si allargano */
+	.social-networks button {
+		flex-basis: 20%;
+	}
+}
+
+/******* SOPRA I 768px *********/
+@media screen and (min-width: 768px) {
+
+	/* Il logo nell'header si sposta a sinistra */
+	#topbar {
+		justify-content: flex-start;
+	}
+
+	/* Il padding nel main aumenta  */
+	main {
+		padding: 50px;
+	}
+
+	/* Compare la scritta "Dolce tradizonale Veneto) 	*/
+	.recipe-origin {
+		display: inline;
+	}
+
+	/* Il font del titolo diventa più grande */
+	.recipe-title {
+		font-size: 1.3rem;
+	}
+
+	/*  Le informazioni si dispongono a griglia */
+	.quick-notes ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.quick-notes li {
+		flex-basis: calc(100% / 3);
+	}
+
+	/* I bottoni social si allargano */
+	.social-networks button {
+		flex-basis: 20%;
+	}
+
+	/* Compare il banner */
+	.ads {
+		display: block;
+	}
+}
+
+/************ SOPRA I 992 ***************/
+
+@media screen and (min-width: 992px) {
+
+	/* Il font del titolo diventa ancora più grande */
+	.recipe-title {
+		font-size: 1.8rem;
+	}
+
+	/* La card divide il suo contenuto */
+	.recipe-card {
+		display: flex;
+	}
+
+	.recipe-video {
+		flex-basis: 70%;
+		max-height: 420px;
+	}
+
+	.recipe-info {
+		flex-basis: 30%;
+	}
+
+	/* Appaiono le scritte nei bottoni social */
+	.social-networks .label {
+		display: inline;
+	}
+
+	/*  Le informazioni tornano in colonna */
+	.quick-notes ul {
+		display: block;
+	}
+
+	/* Il footer si dispone sulle due metà */
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+	}
+}
